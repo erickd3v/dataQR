@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>Pets QR code</h1>
+    <form action="">
+      <div class="dataPets">
+        <label for="namePet">Enter your pet's name: </label>
+        <input type="text" name="namePet" id="namePet" />
+        <br /><br />
+        <label for="birthdatePet">Enter your pet's date of birth: </label>
+        <input type="date" name="birthdatePet" id="namePet" />
+        <br /><br />
+        <label for="genre">Enter your pet's gener: </label>
+        <input type="text" name="gener" id="gener" />
+        <br /><br />
+        <label for="imagePet">Enter your pet's image: </label>
+        <input type="file" name="imagePet" id="imagePet" />
+      </div>
+      <button type="submit">Next =></button>
+      <div class="dataPetOwner"></div>
+    </form>
+    <script src="../js/qr.js"></script>
+  </body>
+</html>

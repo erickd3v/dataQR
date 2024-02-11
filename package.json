@@ -1,0 +1,30 @@
+{
+  "name": "dataqr",
+  "version": "1.0.0",
+  "description": "QR code for Pets",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --verbose",
+    "dev": "nodemon ./scripts/index.js",
+    "start": "node ./scripts/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickd3v/dataQR.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Web",
+    "Node"
+  ],
+  "author": "Erick Yusuke Moya Flores - erickd3v",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erickd3v/dataQR/issues"
+  },
+  "homepage": "https://github.com/erickd3v/dataQR#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
