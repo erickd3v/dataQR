@@ -34,8 +34,11 @@ app.post("/data", async (req, res) => {
     nameOwner,
     cellphone,
   };
-  const jsonData = JSON.stringify(formData);
-  const QR = await QRCode.toDataURL("/views/data.html");
+  const jsonData = JSON.stringify(formData, null, 2);
+
+  const baseUrl = req.protocol + "://" + req.get("host");
+
+  const QR = await QRCode.toDataURL(baseUrl + "/views/data.html");
 
   const htmlContent = `
   <div style="display: flex; justify-content: center; align-items: center;">
@@ -47,7 +50,7 @@ app.post("/data", async (req, res) => {
 
   fs.writeFile(
     join(__dirname, "/data/formData.json"),
-    JSON.stringify(formData, null, 2),
+    JSON.stringify(jsonData),
     "utf-8",
     (err) => {
       if (err) {
