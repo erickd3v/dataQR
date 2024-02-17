@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Pets QR code</h1>
-    <form action="">
+    <form id="myForm" action="/data" method="post">
       <div class="dataPets">
         <label for="namePet">Enter your pet's name: </label>
         <input type="text" name="namePet" id="namePet" />
@@ -22,8 +22,15 @@
         <label for="imagePet">Enter your pet's image: </label>
         <input type="file" name="imagePet" id="imagePet" />
       </div>
-      <button type="submit">Next =></button>
-      <div class="dataPetOwner"></div>
+      <div class="dataPetOwner">
+        <label for="nameOwner">Enter your name: </label>
+        <input type="text" name="nameOwner" id="nameOwner" />
+        <br /><br />
+        <label for="cellphone">Enter your cellphone number: </label>
+        <input type="text" name="cellphone" id="cellphone" />
+      </div>
+      <button type="button" id="previus" class="previus">Previus</button>
+      <button type="button" id="next">Next</button>
     </form>
     <script src="../js/qr.js"></script>
   </body>

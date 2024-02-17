@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+}
+label {
+  color: wheat;
+}
+
+.dataPetOwner {
+  display: none;
+}
+
+/* information Pets */
+.previus {
+  display: none;
+}
+
+/* information Owner */
+.next {
+  display: block;
+}
