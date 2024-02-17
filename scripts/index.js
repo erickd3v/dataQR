@@ -50,7 +50,7 @@ app.post("/data", async (req, res) => {
 
   fs.writeFile(
     join(__dirname, "/data/formData.json"),
-    JSON.stringify(jsonData),
+    jsonData,
     "utf-8",
     (err) => {
       if (err) {
