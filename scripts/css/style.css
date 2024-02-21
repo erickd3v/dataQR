@@ -18,3 +18,7 @@ label {
 .next {
   display: block;
 }
+
+li {
+  color: wheat;
+}
