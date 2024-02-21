@@ -1,6 +1,6 @@
 {
   "name": "dataqr",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "QR code for Pets",
   "main": "index.js",
   "type": "module",
